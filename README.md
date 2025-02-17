@@ -1,2 +1,3 @@
-# nut-digraphs
-Supplementary material for the Nut digraphs paper
+# Nut digraphs
+
+Supplementary material for the Nut digraphs paper.
