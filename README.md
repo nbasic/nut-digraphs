@@ -79,3 +79,19 @@ gentourng -z 8 | ./filter_dextronut_digraphs
 
 We provide examples of **base digraphs** and **gadgets** for the multiplier construction (see Theorem 37).
 
+| Demand  \ n | 6     | 7      |  8      |
+| :---------: | ----: | -----: | ------: |
+| -3          | 0     | 0      | 3       |
+| -2          | 0     | 0      | 10      |
+| -3/2        | 0     | 0      | 2       |
+| -1          | 0     | 3      | 212     |
+| -2/3        | 0     | 0      | 7       |
+| -1/2        | 1     | 8      | 131     |
+| -1/3        | 0     | 9      | 108     |
+| -1/4        | 0     | 0      | 22      |
+| 1/2         | 0     | 0      | 86      |
+| 2/3         | 0     | 6      | 91      | 
+| 3/4         | 0     | 0      | 39      |
+| 1           | 0     | 2      | 221     |
+| 2           | 0     | 0      | 14      |
+| **Total**   | **1** | **28** | **946** |
