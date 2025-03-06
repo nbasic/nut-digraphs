@@ -36,3 +36,9 @@ Nut digraphs among 4-regular oriented graphs of order $n \leq 11$.
 | 9   | 16         | 748576    | 2255                                 | 0   |  0  |
 | 10  | 59         | 19349594  | 33034                                | 2072 | 32 |
 | 11  | 265        | 548123668 | 436947                               | 0 | 0 |
+
+To obtain, e.g., quartic dextro-nut digraphs among oriented graphs on 8 vertices, execute:
+
+```bash
+geng -c -d4D4 8 | directg -o | ./filter_dextronut_digraphs
+```
