@@ -27,15 +27,15 @@ For bi-nut digraphs (or ambi-nut digraphs) use `filter_binut_digraphs` (or `filt
 
 Nut digraphs among 4-regular oriented graphs of order $n \leq 11$.
 
-| n   | Undirected | Oriented  | Dextro-nut                                    | Bi-nut                          | Ambi-nut                         |
-| --: | ---------: | --------: | --------------------------------------------: | ------------------------------: | -------------------------------: |
-| 5   | 1          | 12        | 0                                             | 0                               | 0                                |
-| 6   | 1          | 112       | [4](data/quartic_dextronut_digraphs6.d6)      | 2                               | 2                                |
-| 7   | 2          | 1602      | [9](data/quartic_dextronut_digraphs7.d6)      | 0                               | 0                                |
-| 8   | 6          | 32263     | [202](data/quartic_dextronut_digraphs8.d6)    | 27    |  5  |
-| 9   | 16         | 748576    | [2255](data/quartic_dextronut_digraphs9.d6)   | 0   |  0  |
-| 10  | 59         | 19349594  | [33034](data/quartic_dextronut_digraphs10.d6) | 2072 | 32 |
-| 11  | 265        | 548123668 | 436947                                        | 0 | 0 |
+| n   | Undirected | Oriented  | Dextro-nut                                    | Bi-nut                                   | Ambi-nut                                 |
+| --: | ---------: | --------: | --------------------------------------------: | ---------------------------------------: | ---------------------------------------: |
+| 5   | 1          | 12        | 0                                             | 0                                        | 0                                        |
+| 6   | 1          | 112       | [4](data/quartic_dextronut_digraphs6.d6)      | [2](data/quartic_binut_digraphs6.d6)     | [2](data/quartic_ambinut_digraphs6.d6)   |
+| 7   | 2          | 1602      | [9](data/quartic_dextronut_digraphs7.d6)      | 0                                        | 0                                        |
+| 8   | 6          | 32263     | [202](data/quartic_dextronut_digraphs8.d6)    | [27](data/quartic_binut_digraphs8.d6)    | [5](data/quartic_ambinut_digraphs8.d6)   |
+| 9   | 16         | 748576    | [2255](data/quartic_dextronut_digraphs9.d6)   | 0                                        | 0                                        |
+| 10  | 59         | 19349594  | [33034](data/quartic_dextronut_digraphs10.d6) | [2072](data/quartic_binut_digraphs10.d6) | [32](data/quartic_ambinut_digraphs10.d6) |
+| 11  | 265        | 548123668 | 436947                                        | 0                                        | 0                                        |
 
 To obtain, e.g., quartic dextro-nut digraphs among oriented graphs on 8 vertices, execute:
 
