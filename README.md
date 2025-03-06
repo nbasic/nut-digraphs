@@ -8,6 +8,11 @@ To enumerate nut digraphs we use the [nauty and Traces](https://pallini.di.uniro
 
 Nut digraphs among oriented graphs of order $n \leq 8$.
 
+Files containing dextro-nut digraphs are located in the `data` folder and are named `dextronut_digraphsN.d6`, where `N` is the
+order of the digraph. Similar conventions apply to files containing bi-nut and ambi-nut digraphs. Each line of a file contains one
+digraph in the **digraph6** format. For description of the format see Chapter 20 in the
+[nauty and Traces User's Guide](https://pallini.di.uniroma1.it/Guide.htmlhttps://pallini.di.uniroma1.it/Guide.html).
+
 | n  | Undirected | Oriented  | Dextro-nut                           | Bi-nut                          | Ambi-nut                         |
 | -: | ---------: | --------: | -----------------------------------: | ------------------------------: | -------------------------------: |
 | 3  | 2          | 5         | 0                                    | 0                               | 0                                |
@@ -41,4 +46,25 @@ To obtain, e.g., quartic dextro-nut digraphs among oriented graphs on 8 vertices
 
 ```bash
 geng -c -d4D4 8 | directg -o | ./filter_dextronut_digraphs
+```
+
+Nut digraphs among tournaments of order $n \leq 11$.
+
+| n  | Tournaments  | Dextro-nut                             | Bi-nut                               | Ambi-nut |
+| -: | -----------: | -------------------------------------: | -----------------------------------: | -------: |
+| 4  | 4            | [1](data/dextronut_tournaments4.d6)    | 0                                    | 0        |
+| 5  | 12           | 0                                      | 0                                    | 0        |
+| 6  | 56           | [3](data/dextronut_tournaments6.d6)    | 0                                    | 0        |
+| 7  | 456          | [9](data/dextronut_tournaments7.d6)    | 0                                    | 0        |
+| 8  | 6880         | [119](data/dextronut_tournaments8.d6)  | 0                                    | 0        |
+| 9  | 191536       | [2373](data/dextronut_tournaments9.d6) | [10](data/binut_tournaments9.d6)     | 0        |
+| 10 | 9733056      | 90782                                  | [567](data/binut_tournaments10.d6)   | 0        |
+| 11 | 903753248    | 5918592                                | [26629](data/binut_tournaments11.d6) | 0        |
+
+It is shown in the paper that ambi-nut tournaments do not exist (see Proposition 10).
+
+To obtain, e.g., dextro-nut digraph among tournaments on 8 vertices, execute:
+
+```bash
+gentourng -z 8 | ./filter_dextronut_digraphs
 ```
