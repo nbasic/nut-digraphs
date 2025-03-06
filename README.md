@@ -8,6 +8,11 @@ To enumerate nut digraphs we use the [nauty and Traces](https://pallini.di.uniro
 
 Nut digraphs among oriented graphs of order $n \leq 8$.
 
+Files containing dextro-nut digraphs are located in the `data` folder and are named `dextronut_digraphsN.d6`, where `N` is the
+order of the digraph. Similar conventions apply to files containing bi-nut and ambi-nut digraphs. Each line of a file contains one
+digraph in the **digraph6** format. For description of the format see Chapter 20 in the
+[nauty and Traces User's Guide](https://pallini.di.uniroma1.it/Guide.htmlhttps://pallini.di.uniroma1.it/Guide.html).
+
 | n  | Undirected | Oriented  | Dextro-nut                           | Bi-nut                          | Ambi-nut                         |
 | -: | ---------: | --------: | -----------------------------------: | ------------------------------: | -------------------------------: |
 | 3  | 2          | 5         | 0                                    | 0                               | 0                                |
