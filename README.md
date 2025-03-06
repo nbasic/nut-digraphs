@@ -96,7 +96,7 @@ The program `find_gadgets.py` is written in Python with [SageMath](https://www.s
 0 are ignored (as they are simply ambi-nut digraphs). The table below gives the number of gadgets of orders 
 $n \leq 8$, stratified by demands.
 
-| Demand  \ n | 6     | 7      |  8      |
+| Demand \ n  | 6     | 7      |  8      |
 | :---------: | ----: | -----: | ------: |
 | -3          | 0     | 0      | 3       |
 | -2          | 0     | 0      | 10      |
@@ -112,3 +112,29 @@ $n \leq 8$, stratified by demands.
 | 1           | 0     | 2      | 221     |
 | 2           | 0     | 0      | 14      |
 | **Total**   | [**1**](data/gadgets/gadgets6.txt) | [**28**](data/gadgets/gadgets7.txt) | [**946**](data/gadgets/gadgets8.txt) |
+
+Base digraphs can be found in the `data/base_digraphs` folder. Files are named `base_digraphs_nX_eigY.txt`, where `X` is the
+order of the digraph and `Y` is the eigenvalue. Each line describes one base digraph. The description of the base digraph contains
+(separated by spaces):
+
+ * the digraph in the digraph6 format;
+ * the full eigenvector that spans the `Y`-eigenspace.
+
+To obtain base digraph on, e.g., 6 vertices for a given eigenvalue, e.g. -1, execute the following:
+
+```bash
+geng -c 6 | directg -o | ./find_base_digraphs.py -1
+```
+The program `find_base_digraphs.py` is written in Python with [SageMath](https://www.sagemath.org/). Base digraphs that
+are $k$-diregular are ignored if the given eigenvalue equals $k$. They are also ignored if they are bipartite k-diregular and
+the given eigenvalue equals $-k$. The table below gives the number of such base digraphs of orders $5 \leq n \leq 8$ and
+eigenvalues from the set $\{-3, -2, -1, 1, 2, 3\}$.
+
+| Eigenvalue \ n | 5   | 6     | 7     |  8      |
+| :------------: | --: | ----: | ----: | ------: |
+| -3             | 0   | ?     | ?     | ?       |
+| -2             | 0   | ?     | ?     | ?       |
+| -1             | [1](data/base_digraphs/base_digraphs_n5_eig-1.txt)   | ?      | ?     | ?       |
+| 1              | 0   | ?     | ?     | ?       |
+| 2              | 0   | ?     | ?     | ?       |
+| 3              | 0   | ?     | ?     | ?       |
