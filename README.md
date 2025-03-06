@@ -47,3 +47,24 @@ To obtain, e.g., quartic dextro-nut digraphs among oriented graphs on 8 vertices
 ```bash
 geng -c -d4D4 8 | directg -o | ./filter_dextronut_digraphs
 ```
+
+Nut digraphs among tournaments of order $n \leq 11$.
+
+| n  | Tournaments  | Dextro-nut                             | Bi-nut                               | Ambi-nut |
+| -: | -----------: | -------------------------------------: | -----------------------------------: | -------: |
+| 4  | 4            | [1](data/dextronut_tournaments4.d6)    | 0                                    | 0        |
+| 5  | 12           | 0                                      | 0                                    | 0        |
+| 6  | 56           | [3](data/dextronut_tournaments6.d6)    | 0                                    | 0        |
+| 7  | 456          | [9](data/dextronut_tournaments7.d6)    | 0                                    | 0        |
+| 8  | 6880         | [119](data/dextronut_tournaments8.d6)  | 0                                    | 0        |
+| 9  | 191536       | [2373](data/dextronut_tournaments9.d6) | [10](data/binut_tournaments9.d6)     | 0        |
+| 10 | 9733056      | 90782                                  | [567](data/binut_tournaments10.d6)   | 0        |
+| 11 | 903753248    | 5918592                                | [26629](data/binut_tournaments11.d6) | 0        |
+
+It is shown in the paper that ambi-nut tournaments do not exist (see Proposition 10).
+
+To obtain, e.g., dextro-nut digraph among tournaments on 8 vertices, execute:
+
+```bash
+gentourng -z 8 | ./filter_dextronut_digraphs
+```
