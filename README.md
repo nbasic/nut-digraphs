@@ -13,14 +13,16 @@ order of the digraph. Similar conventions apply to files containing bi-nut and a
 digraph in the **digraph6** format. For description of the format see Chapter 20 in the
 [nauty and Traces User's Guide](https://pallini.di.uniroma1.it/Guide.htmlhttps://pallini.di.uniroma1.it/Guide.html).
 
-| n  | Undirected | Oriented  | Dextro-nut                           | Bi-nut                          | Ambi-nut                         |
-| -: | ---------: | --------: | -----------------------------------: | ------------------------------: | -------------------------------: |
-| 3  | 2          | 5         | 0                                    | 0                               | 0                                |
-| 4  | 6          | 34        | [1](data/dextronut_digraphs4.d6)     | 0                               | 0                                |
-| 5  | 21         | 535       | [4](data/dextronut_digraphs5.d6)     | 0                               | 0                                |
-| 6  | 112        | 20848     | [153](data/dextronut_digraphs6.d6)   | [2](data/binut_digraphs6.d6)    | [2](data/ambinut_digraphs6.d6)   |
-| 7  | 853        | 2120098   | [17170](data/dextronut_digraphs7.d6) | [21](data/binut_digraphs7.d6)   | [1](data/ambinut_digraphs7.d6)   |
-| 8  | 11117      | 572849763 | 5579793                              | [9592](data/binut_digraphs8.d6) | [104](data/ambinut_digraphs8.d6) |
+| n  | Undirected | Oriented        | Dextro-nut                           | Bi-nut                          | Ambi-nut                          |
+| -: | ---------: | --------------: | -----------------------------------: | ------------------------------: | --------------------------------: |
+| 3  | 2          | 5               | 0                                    | 0                               | 0                                 |
+| 4  | 6          | 34              | [1](data/dextronut_digraphs4.d6)     | 0                               | 0                                 |
+| 5  | 21         | 535             | [4](data/dextronut_digraphs5.d6)     | 0                               | 0                                 |
+| 6  | 112        | 20848           | [153](data/dextronut_digraphs6.d6)   | [2](data/binut_digraphs6.d6)    | [2](data/ambinut_digraphs6.d6)    |
+| 7  | 853        | 2120098         | [17170](data/dextronut_digraphs7.d6) | [21](data/binut_digraphs7.d6)   | [1](data/ambinut_digraphs7.d6)    |
+| 8  | 11117      | 572849763       | 5579793                              | [9592](data/binut_digraphs8.d6) | [104](data/ambinut_digraphs8.d6)  |
+| 9  | 261080     | 415361983540    | ?                                    | ?                               | [3371](data/ambinut_digraphs9.d6) |
+| 10 | 11716571   | 815590925440865 | ?                                    | ?                               | 1404682                           |
 
 To obtain, e.g., dextro-nut digraphs among oriented graphs on 6 vertices, execute:
 
