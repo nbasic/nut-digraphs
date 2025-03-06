@@ -8,14 +8,14 @@ To enumerate nut digraphs we use the [nauty and Traces](https://pallini.di.uniro
 
 Nut digraphs among orianted graphs of order $n \leq 8$.
 
-| n  | Undirected | Oriented  | Dextro-nut | Bi-nut | Ambi-nut |
-| -: | ---------: | --------: | ---------: | -----: | -------: |
-| 3  | 2          | 5         | 0          | 0      | 0        |
-| 4  | 6          | 34        | 1          | 0      | 0        |
-| 5  | 21         | 535       | 4          | 0      | 0        |
-| 6  | 112        | 20848     | 153        | 2      | 2        |
-| 7  | 853        | 2120098   | 17170      | 21     | 1        |
-| 8  | 11117      | 572849763 | ?          | ?      | ?        |
+| n  | Undirected | Oriented  | Dextro-nut                           | Bi-nut | Ambi-nut |
+| -: | ---------: | --------: | -----------------------------------: | -----: | -------: |
+| 3  | 2          | 5         | 0                                    | 0      | 0        |
+| 4  | 6          | 34        | [1](data/dextronut_digraphs4.d6)     | 0      | 0        |
+| 5  | 21         | 535       | [4](data/dextronut_digraphs5.d6)     | 0      | 0        |
+| 6  | 112        | 20848     | [153](data/dextronut_digraphs6.d6)   | 2      | 2        |
+| 7  | 853        | 2120098   | [17170](data/dextronut_digraphs7.d6) | 21     | 1        |
+| 8  | 11117      | 572849763 | ?                                    | ?      | ?        |
 
 To obtain, e.g., dextro-nut digraphs among oriented graphs on 6 vertices, execute:
 
