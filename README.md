@@ -79,6 +79,22 @@ gentourng -z 8 | ./filter_dextronut_digraphs
 
 We provide examples of **base digraphs** and **gadgets** for the multiplier construction (see Theorem 37).
 
+Gadgets can be found in the `data/gadgets` folder. Files are named `gadgetsN.txt`, where `N` is the
+order of the digraph. Each line describes one gadget. The description of the gadget contains (separated by spaces):
+
+ * the digraph in the digraph6 format;
+ * the root vertex;
+ * the demand (as a fraction).
+
+To obtain gadgets on, e.g., 6 vertices, execute the following:
+
+```bash
+geng -c 6 | directg -o | ./find_gadgets.py
+```
+
+The program `find_gadgets.py` is written in Python with [SageMath](https://www.sagemath.org/). The table below
+gives the number of gadgets of orders $n \leq 8$, stratified by demands.
+
 | Demand  \ n | 6     | 7      |  8      |
 | :---------: | ----: | -----: | ------: |
 | -3          | 0     | 0      | 3       |
