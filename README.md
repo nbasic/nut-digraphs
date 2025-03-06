@@ -74,3 +74,8 @@ To obtain, e.g., dextro-nut digraph among tournaments on 8 vertices, execute:
 ```bash
 gentourng -z 8 | ./filter_dextronut_digraphs
 ```
+
+## Multiplier constructions
+
+We provide examples of **base digraphs** and **gadgets** for the multiplier construction (see Theorem 37).
+
