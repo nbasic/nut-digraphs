@@ -6,7 +6,7 @@ To enumerate nut digraphs we use the [nauty and Traces](https://pallini.di.uniro
 
 ## Examples and enumeration
 
-Nut digraphs among orianted graphs of order $n \leq 8$.
+Nut digraphs among oriented graphs of order $n \leq 8$.
 
 | n  | Undirected | Oriented  | Dextro-nut                           | Bi-nut                          | Ambi-nut                         |
 | -: | ---------: | --------: | -----------------------------------: | ------------------------------: | -------------------------------: |
@@ -24,3 +24,15 @@ geng -c 6 | directg -o | ./filter_dextronut_digraphs
 ```
 
 For bi-nut digraphs (or ambi-nut digraphs) use `filter_binut_digraphs` (or `filter_ambinut_digraphs`) instead of `filter_dextronut_digraphs`.
+
+Nut digraphs among 4-regular oriented graphs of order $n \leq 11$.
+
+| n   | Undirected | Oriented  | Dextro-nut                           | Bi-nut                          | Ambi-nut                         |
+| --: | ---------: | --------: | -----------------------------------: | ------------------------------: | -------------------------------: |
+| 5   | 1          | 12        | 0                                    | 0                               | 0                                |
+| 6   | 1          | 112       | 4                                    | 2                               | 2                                |
+| 7   | 2          | 1602      | 9                                    | 0                               | 0                                |
+| 8   | 6          | 32263     | 202                                  | 27    |  5  |
+| 9   | 16         | 748576    | 2255                                 | 0   |  0  |
+| 10  | 59         | 19349594  | 33034                                | 2072 | 32 |
+| 11  | 265        | 548123668 | 436947                               | 0 | 0 |
