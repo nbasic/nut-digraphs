@@ -92,8 +92,9 @@ To obtain gadgets on, e.g., 6 vertices, execute the following:
 geng -c 6 | directg -o | ./find_gadgets.py
 ```
 
-The program `find_gadgets.py` is written in Python with [SageMath](https://www.sagemath.org/). The table below
-gives the number of gadgets of orders $n \leq 8$, stratified by demands.
+The program `find_gadgets.py` is written in Python with [SageMath](https://www.sagemath.org/). Gadgets of demand
+0 are ignored (as they are simply ambi-nut digraphs). The table below gives the number of gadgets of orders 
+$n \leq 8$, stratified by demands.
 
 | Demand  \ n | 6     | 7      |  8      |
 | :---------: | ----: | -----: | ------: |
@@ -110,4 +111,4 @@ gives the number of gadgets of orders $n \leq 8$, stratified by demands.
 | 3/4         | 0     | 0      | 39      |
 | 1           | 0     | 2      | 221     |
 | 2           | 0     | 0      | 14      |
-| **Total**   | **1** | **28** | **946** |
+| **Total**   | [**1**](data/gadgets/gadgets6.txt) | [**28**](data/gadgets/gadgets7.txt) | [**946**](data/gadgets/gadgets8.txt) |
