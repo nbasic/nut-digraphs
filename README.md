@@ -136,5 +136,5 @@ eigenvalues from the set $\{-3, -2, -1, 1, 2, 3\}$.
 | -2             | 0   | 0     | 0     | ?       |
 | -1             | [1](data/base_digraphs/base_digraphs_n5_eig-1.txt)   | [3](data/base_digraphs/base_digraphs_n6_eig-1.txt)      | [34](data/base_digraphs/base_digraphs_n7_eig-1.txt)     | ?       |
 | 1              | 0   | 0     | 0     | ?       |
-| 2              | 0   | 0     | ?     | ?       |
-| 3              | 0   | 0     | ?     | ?       |
+| 2              | 0   | 0     | [2](data/base_digraphs/base_digraphs_n7_eig2.txt)     | ?       |
+| 3              | 0   | 0     | 0     | ?       |
