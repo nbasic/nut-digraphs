@@ -138,3 +138,9 @@ eigenvalues from the set $\{-3, -2, -1, 1, 2, 3\}$.
 | 1              | 0   | 0     | 0     | ?       |
 | 2              | 0   | 0     | [2](data/base_digraphs/base_digraphs_n7_eig2.txt)     | ?       |
 | 3              | 0   | 0     | 0     | ?       |
+
+## Unsuitable ambi-nut digraphs
+
+Ambi-nut digraphs $G$ that do not contain an arc $(u_1, u_2) \in E(G)$ such that the vertices $u_1$ and $u_2$ carry equal entries in the
+full kernel eigenvector are called **unsuitable**. There are exactly 6 such ambi-nut digraph on 10 vertices;
+see the file [unsuitable_ambinut_digraphs10.d6](data/unsuitable_ambinut_digraphs10.d6).
