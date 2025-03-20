@@ -1,6 +1,9 @@
 # Nut digraphs
 
-Supplementary material for the Nut digraphs paper.
+Supplementary material for the [Nut digraphs paper](https://arxiv.org/abs/2503.10548). If you use this data in your research, please cite this paper:
+
+> N. Bašić, P. W. Fowler, M. M. McCarthy, P. Potočnik,
+> Nut digraphs, 2025, [arXiv:2503.10548](https://arxiv.org/abs/2503.10548) [math.CO].
 
 To enumerate nut digraphs we use the [nauty and Traces](https://pallini.di.uniroma1.it/) software and the **Nut tools** package (provided in the present repository).
 
